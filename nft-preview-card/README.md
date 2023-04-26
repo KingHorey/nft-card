@@ -17,7 +17,7 @@
 Love a bit of cryptocurrency? This project is a nft card for a cyptocurrecy (Ethereum)
 
 ## Screenshot
-![]("./screnshot.png")
+![]("./screenshot.png")
 
 ## My process
 Before approaching this project I made the mistake of trying to do it as I did with others. But after encountering issues with certain aspects, I came across a Kevin Powell video and I approached this task with some of the tips he gave (Not that this entirely made it effortless) but it added more clarity
