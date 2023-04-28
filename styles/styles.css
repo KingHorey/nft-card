@@ -7,6 +7,10 @@
 
 body {
   background-color: hsl(217, 54%, 11%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 }
 
 .cardInfo {
@@ -27,10 +31,6 @@ body {
   border-radius: 10px;
 }
 
-.footer {
-  position: relative;
-}
-
 footer>img {
   max-height: 10%;
   width: 10%;
@@ -44,6 +44,7 @@ hr {
   border: 1px solid hsl(215, 51%, 70%);
   border-top: none;
   opacity: 20%;
+  width: 100%;
 }
 
 #icon-view {
@@ -76,6 +77,9 @@ hr {
   background-color: hsl(216, 50%, 16%);
   border-radius: 15px;
   position: relative;
+  display: flex;
+  flex-direction: column;
+/*  align-items: center;*/
 }
 
 .neon-hover {
@@ -101,6 +105,8 @@ h1:hover {
 
 p, h1{
   color: hsl(215, 51%, 70%);
+  word-wrap: break-word;
+
 }
 
 .price>.purchaseInfo {
@@ -115,5 +121,72 @@ p, h1{
 }
 
 span{
-  color: hsl(178, 100%, 50%);;
+  color: hsl(178, 100%, 50%);
+}
+
+@media (max-width: 840px) {
+  .main-container {
+    max-width: 70%;
+  }
+}
+
+@media (max-width: 475px) {
+  .main-container {
+    max-width: 60%;
+  }
+
+  .cardInfo {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .cardInfo .price img {
+    max-width: 20%;
+  }
+
+  .purchaseInfo {
+    font-size: 13px;
+  }
+
+  .caption {
+    position: absolute;
+    bottom: 0;
+    word-wrap: break-word;
+  }
+
+  footer img {
+    max-width: 20%;
+  }
+}
+
+@media (max-width: 320px) {
+  h1 {
+    font-size: 17px;
+  }
+
+  p {
+    font-size: 11px;
+  }
+
+  .cardInfo, .caption {
+    font-size: 10px;
+  }
+
+  .caption {
+    position: absolute;
+    bottom : 0;
+  }
+
+  footer img {
+    max-width: 90%;
+    min-width: 20px;
+  }
+
+  .purchaseInfo {
+    font-size: 9px;
+  }
+
+  .svgs {
+/*    max-width: 25%;*/
+  }
 }
